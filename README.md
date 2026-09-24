@@ -1,6 +1,6 @@
 # MessageLens — QVAC Local AI App
 
-MessageLens is a small local-first web app that reads a pasted message and returns its **intent, urgency, tone, a one-sentence summary, and a suggested reply**.
+sterlingccode MessageLens is a small local-first web app that reads a pasted message and returns its **intent, urgency, tone, a one-sentence summary, and a suggested reply**.
 
 The inference is performed locally by QVAC through the Node.js SDK. No API key is required and the message is not sent to a cloud AI service.
 
