@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MessageLens — Private Message Analyzer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <span class="badge">QVAC · ON-DEVICE AI</span>
+      <h1>Message<span>Lens</span></h1>
+      <p>Paste a message. See what it means, how urgent it feels, and a simple reply — without sending the text to a cloud AI.</p>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <label for="message">Message to analyze</label>
+        <button id="demo" class="ghost" type="button">Try demo</button>
+      </div>
+      <textarea id="message" maxlength="5000" placeholder="Paste an email, chat, request, or confusing message here..."></textarea>
+      <div class="actions">
+        <span id="status" class="status">QVAC model loads on first analysis.</span>
+        <button id="analyze" class="primary" type="button">Analyze locally</button>
+      </div>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div class="grid">
+        <article class="card"><span class="label">Intent</span><strong id="intent">—</strong></article>
+        <article class="card"><span class="label">Urgency</span><strong id="urgency">—</strong></article>
+        <article class="card"><span class="label">Tone</span><strong id="tone">—</strong></article>
+      </div>
+      <article class="card wide"><span class="label">What it means</span><p id="summary">—</p></article>
+      <article class="card wide reply-card">
+        <div class="reply-head"><span class="label">Suggested reply</span><button id="copy" class="ghost" type="button">Copy</button></div>
+        <p id="reply">—</p>
+      </article>
+    </section>
+
+    <footer>Runs with QVAC on your machine. No API key. No cloud inference.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

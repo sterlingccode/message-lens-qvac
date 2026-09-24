@@ -1,0 +1,15 @@
+{
+  "name": "message-lens-qvac",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first message analyzer powered by QVAC.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@qvac/inference": "0.20.0",
+    "@qvac/sdk": "0.20.0",
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,32 @@
+PUSH THIS PROJECT TO GITHUB
+
+I have a completed QVAC app in this folder called MessageLens.
+
+Please:
+1. Create a NEW PUBLIC GitHub repository named `message-lens-qvac` under my GitHub account.
+2. Do NOT fork another repository and do NOT copy the QVAC example repo.
+3. Keep the app's QVAC implementation and dependencies exactly as provided unless a dependency fix is required for it to run.
+4. Make sure these files are included:
+   - package.json
+   - README.md
+   - LICENSE
+   - .gitignore
+   - GITHUB_PROMPT.txt
+   - server.js
+   - public/index.html
+   - public/app.js
+   - public/styles.css
+5. Make at least 3 meaningful commits, authored by me:
+   - feat: create MessageLens UI
+   - feat: add QVAC local inference
+   - docs: add README and open source license
+6. Push the repository to the `main` branch.
+7. Keep the repository PUBLIC.
+8. Do not add API keys, secrets, or `.env` files.
+9. After pushing, report:
+   - GitHub repository URL
+   - branch name
+   - the 3 commit hashes
+   - confirmation that the repository is public
+
+Important: do not replace QVAC with OpenAI, Gemini, Claude, or another cloud AI API. The project must continue to use QVAC for inference.
